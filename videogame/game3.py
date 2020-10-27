@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# running it with ./game3 failed because you didn't have a shebang line
+
 print ("Hello there! What is your name? I will help you make your life better.")
 
 print ('This quiz will let you know what video game you should try, and which you would fail miserably at') #added parens
