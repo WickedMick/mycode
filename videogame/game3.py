@@ -26,7 +26,7 @@ print("Kidding. Let us see what is out there for you")
 
 message = "Ok..."
 
-interests = str(input("What is your quest...or interests?"))
+interests = str(input("What is your quest...or interests? Please let me know which you prefer between baseball, football, fishing, shooting, crime, or basketball better"))
 
 if interests == 'football':
     message == message + "Try Madden"
