@@ -5,7 +5,14 @@ print ("Hello there! What is your name? I will help you make your life better.")
 print ('This quiz will let you know what video game you should try, and which you would fail miserably at') #added parens
  
 message = "Judging by your answer..."
-age = int(input("What is your age?")) 
+
+while True:
+    try:
+        age = int(input("What is your age? Be honest in numerals"))
+        break
+    except:
+        print("NUMERALS!!!")
+
      # input creates STRINGS... and down below you're comparing "age" to integers.
      # I added the int() function to force the input into becoming an integer
  
@@ -26,7 +33,7 @@ print("Kidding. Let us see what is out there for you")
 
 message = "Ok..."
 
-interests = str(input("What is your quest...or interests? Please let me know which you prefer between baseball, football, fishing, shooting, crime, or basketball better"))
+interests = str(input("What are you interested in? Please let me know which you prefer between baseball, football, fishing, shooting, crime, or basketball."))
 
 if interests == 'football':
     message == message + "Try Madden"
