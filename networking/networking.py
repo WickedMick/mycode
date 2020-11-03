@@ -5,6 +5,11 @@
 #import pyexcel
 #import ansible
 # Define the path of configuration file stored in excel format
+#install netmiko
+from netmiko import ConnectHandler
+import os
+#pip install paramiko
+
 excel_path = os.path.join(os.getcwd(), r'Excel_folder\configurations\config.xlsx')
 
 # Capture Node A and Node B columns
@@ -20,3 +25,10 @@ df_NodeB = pd.DataFrame(df_int, columns = columns_B)
 df_listA = df_NodeA.to_dict('records')
 df_listB = df_NodeB.to_dict('records')
 
+# import excel file and convert to list of dicts from 'vrf' sheet
+df_vrf = pd.read_excel(excel_path, sheet_name='vrf')
+df_list_vrf = df_vrf.to_dict('records')
+
+# import excel file and convert to list of dicts from 'routing' sheet
+df_routing = pd.read_excel(excel_path, sheet_name='routing')
+df_list_routing = df_routing.to_dict('records')
