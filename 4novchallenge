@@ -26,16 +26,27 @@ def q2():
 
 #define question 3
 def q3():
-    while True:
+     while True:
         print("Are you REALLY a coward?")
         ans = input("YES or NO")
 
         if ans == "yes":
-            print("Bacon will not only turn you into a true warrior, it will fill your soul with joy!")
+            print("Bacon will not only turn you into a true warrior, it will fill your soul with joy!")       
             break 
-        else: print("Then what is the real issue?")
+        
+        else:  
+            print("Then what is the real issue?")
+            q4()
 #define queston 4
-
+def q4():
+    print("Do you have a pet pig?")
+    ans= input("YES or NO")
+    
+    if ans == "yes":
+        print("Great more bacon!")
+    elif ans == "no":
+        print("I really don't see the issue here")
+        q3()
 
 if __name__ == "__main__":
     q1()
