@@ -13,7 +13,7 @@ def q1():
         q2()
 #define question 2
 def q2():
-    print("You've clearly never tasted bacon. Are you afraid it will kill you?")
+    print("You've clearly never tasted a burger. Are you afraid it will kill you?")
     ans = input("YES or NO")
     
     if ans == "yes":
@@ -31,7 +31,7 @@ def q3():
         ans = input("YES or NO")
 
         if ans == "yes":
-            print("Bacon will not only turn you into a true warrior, it will fill your soul with joy!")       
+            print("Burgers will not only turn you into a true warrior, they will fill your soul with joy!")       
             break 
         
         else:  
@@ -39,11 +39,13 @@ def q3():
             q4()
 #define queston 4
 def q4():
-    print("Do you have a pet pig?")
+    print("Do you have a pet cow?")
     ans= input("YES or NO")
     
     if ans == "yes":
-        print("Great more bacon!")
+        print("Great more burgers!")
+       # break 
+
     elif ans == "no":
         print("I really don't see the issue here")
         q3()
