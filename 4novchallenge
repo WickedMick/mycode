@@ -7,7 +7,7 @@ def q1():
     ans = input("YES or NO")
 
     if ans == "yes":
-        print("EAT IT!")
+        print("EAT IT! Get down with that beefy goodness!")
     
     elif ans == "no":
         q2()
@@ -21,7 +21,7 @@ def q2():
         q3()
     
     elif ans == "no":
-        print("EAT IT!")
+        print("Now you eat that tasty burger!")
         
 
 #define question 3
@@ -31,7 +31,7 @@ def q3():
         ans = input("YES or NO")
 
         if ans == "yes":
-            print("Burgers will not only turn you into a true warrior, they will fill your soul with joy!")       
+            print("Burgers will not only make yo more attractive, they will fill your soul with joy!")       
             break 
         
         else:  
