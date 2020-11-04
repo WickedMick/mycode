@@ -1,54 +1,83 @@
 #!/usr/bin/env python3
-#define question 1
-def q1():
-    print("Should you eat that burger!? ")
-    print("Please only answer Yes or No")
-    print("Do you want to feel like angels are frolicking on your taste buds?")
-    ans = input("YES or NO")
 
+print("Do you want to eat a tasty burger?!")
+#define question 1
+choice = input("\nPress q to quit whenever you want, or ENTER to go on")
+if choice == "q":
+    exit(0)
+
+else:
+    pass
+
+def q1():
+    print("\nShould you take the time to savor that flavor?")
+    print("\nPlease only answer yes or no")
+    print("\nDo you want to to try the finest beef outside of politics?")
+    ans = input("YES or NO or q to exit")
+    
     if ans == "yes":
-        print("EAT IT! Get down with that beefy goodness!")
+        print("\nEAT IT! Get down with that beefy goodness!")
     
     elif ans == "no":
         q2()
+    elif ans == "q":
+        exit(0)
+    else:
+        print("\nAnswer yes or no")
+        q1()
 #define question 2
 def q2():
-    print("You've clearly never tasted a burger. Are you afraid it will kill you?")
-    ans = input("YES or NO")
+    print("\nYou've clearly never tasted a burger. Are you afraid it will kill you?")
+    ans = input("\nYES or NO")
     
     if ans == "yes":
-        print("Coward")
+        print("\nCoward")
         q3()
     
     elif ans == "no":
-        print("Now you eat that tasty burger!")
-        
+        print("\nNow you eat that tasty burger!")
+    
+    elif ans == "q":
+        exit(0)
+    else:
+        print("\nAnswer yes or no")
+        q2()    
 
 #define question 3
 def q3():
      while True:
-        print("Are you REALLY a COWard?")
-        ans = input("YES or NO")
+        print("\nAre you REALLY a COWard?")
+        ans = input("\nYES or NO")
 
         if ans == "yes":
-            print("Burgers will not only make yo more attractive, they will fill your soul with joy!")       
+            print("\nBurgers will not only make yo more attractive, they will fill your soul with joy!")       
             break 
         
-        else:  
-            print("Then what is the real issue?")
+        elif ans == "no":
+            print("\nThen what is the real issue?")
             q4()
+        elif ans == "q":
+            exit(0)
+
+        else:  
+            print("\nPlease answer yes or no")
+            q3()
 #define queston 4
 def q4():
-    print("Do you have a pet cow?")
-    ans= input("YES or NO")
+    print("\nDo you have a pet cow?")
+    ans= input("\nYES or NO")
     
     if ans == "yes":
-        print("Great more burgers!")
+        print("\n\nGreat more burgers!")
+        
        # break 
 
     elif ans == "no":
-        print("I really don't see the issue here")
+        print("\nI really don't see the issue here")
         q3()
+    elif ans == "q":
+        exit(0)
+
 
 if __name__ == "__main__":
     q1()
