@@ -27,7 +27,7 @@ def q2():
 #define question 3
 def q3():
      while True:
-        print("Are you REALLY a coward?")
+        print("Are you REALLY a COWard?")
         ans = input("YES or NO")
 
         if ans == "yes":
