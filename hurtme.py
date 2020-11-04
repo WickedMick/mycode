@@ -30,9 +30,9 @@ else:                 # if answer was wrong
 #Define classes
 #animal = ["sheep", "cows", "pigs", "chickens", "llamas", "cats"]
 #veg = ["carrots", "celery"]
-#FORBIDDEN: ["carrots", "celery"]
-for animal in farms[choice]["agriculture"]: print(animal) 
-#create a for loop
+FORBIDDEN: ["carrots", "celery"]
+for animal in farms[choice]["agriculture"]: print(animal)
+#create for loop
 #for x in farms[0]["agriculture"]:
    # print(x)
 #for animal in 

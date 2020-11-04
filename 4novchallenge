@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+#define question 1
+def q1():
+    print("Should you eat that burger!? ")
+    print("Please only answer Yes or No")
+    print("Do you want to feel like angels are frolicking on your taste buds?")
+    ans = input("YES or NO")
+
+    if ans == "yes":
+        print("EAT IT!")
+    
+    elif ans == "no":
+        q2()
+#define question 2
+def q2():
+    print("You've clearly never tasted bacon. Are you afraid it will kill you?")
+    ans = input("YES or NO")
+    
+    if ans == "yes":
+        print("Coward")
+        q3()
+    
+    elif ans == "no":
+        print("EAT IT!")
+        
+
+#define question 3
+def q3():
+    while True:
+        print("Are you REALLY a coward?")
+        ans = input("YES or NO")
+
+        if ans == "yes":
+            print("Bacon will not only turn you into a true warrior, it will fill your soul with joy!")
+            break 
+        else: print("Then what is the real issue?")
+#define queston 4
+
+
+if __name__ == "__main__":
+    q1()
